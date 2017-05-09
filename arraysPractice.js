@@ -288,18 +288,18 @@ var colt = {
 array with those four objects. After that console.log the length of the Array and make
 sure that it's equal to 4. */
 
- devMountainEmployees = [tyler, cahlan, ryan, colt ];
+ devMountainEmployees = ["tyler", "cahlan", 'ryan', 'colt' ];
 
 /*Now let's say Cahlan has a mental breakdown and has to take a leave of absence to 'find himself'.
 Loop through your devMountainEmployees until you find cahlan, then remove him from the array.*/
 
-  // for (var i = 0; i < devMountainEmployees.length; i++) {
-   // if (devMountainEmployees[i]==="cahlan" ) {
-
-//}
+    for (var i = 0; i < devMountainEmployees.length; i++) {
+     if (devMountainEmployees[i]==="cahlan" ) {
+        devMountainEmployees.splice(i, 1)
+ }
       
-  //   return devMountainEmployees;
-  // }
+  
+  }
   
 
 
@@ -346,13 +346,13 @@ and those objects contain properties about the specific person you follow.*/
 objects until you find Tyler's account (use tylermcginnis33@gmail.com to find him).
 Once you find the particular index he's located in, delete him from the array.*/
 
-// for (var key in users) {
-//    if (users[key] === "tylermcginnis33@gmail.com" ){
-            users.splice(i, 1)
-}
-// }
+ for (var i = 0; i < users.length; i++)  {
+    if (users[i].email === "tylermcginnis33@gmail.com" ){
+           users.splice(i, 1);
+      }
+ }
 
- return users
+ //return users
 //The activity we just did is very much how data works in 'the real world'.
 
 
